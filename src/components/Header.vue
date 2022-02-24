@@ -115,7 +115,7 @@ p {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 355px) {
     h1 {
         font-size: 2em;
     }
