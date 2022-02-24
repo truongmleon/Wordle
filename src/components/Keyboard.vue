@@ -429,8 +429,8 @@ let deleteLetter = () => {
 
     button {
         width: 24px;
-        height: 40px;
-        font-size: 8px;
+        height: 43px;
+        font-size: 7.6px;
     }
 
     #enter {
