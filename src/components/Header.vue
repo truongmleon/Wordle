@@ -154,4 +154,11 @@ p {
         height: 19px;
     }
 }
+
+@media (max-width: 300px) {
+    #question {
+        width: 1000px;
+        height: 1000px;
+    }
+}
 </style>
