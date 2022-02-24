@@ -418,6 +418,7 @@ let deleteLetter = () => {
 
     #dialogBox {
         font-size: 1.3em;
+        margin-top: -340px;
     }
 }
 
