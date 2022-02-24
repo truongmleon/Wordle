@@ -396,7 +396,7 @@ let deleteLetter = () => {
     button {
         width: 31.5px;
         height: 47px;
-        font-size: .7em;
+        font-size: .65em;
         user-select: none;
         margin: 2px;
     }
@@ -430,7 +430,7 @@ let deleteLetter = () => {
     button {
         width: 24px;
         height: 45px;
-        font-size: 6px;
+        font-size: 8px;
     }
 
     #enter {
