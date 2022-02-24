@@ -397,6 +397,7 @@ let deleteLetter = () => {
         width: 26.5px;
         height: 45px;
         font-size: .7em;
+        user-select: none;
     }
 
     #enter {
@@ -444,6 +445,38 @@ let deleteLetter = () => {
 
     #dialogBox {
         font-size: 1.2em;
+        margin-top: -340px;
+    }
+}
+
+@media (max-width: 315px) {
+    #keyboardContainer {
+        width: 230px;
+    }
+
+    button {
+        width: 17px;
+        height: 30px;
+        font-size: 6px;
+    }
+
+    #enter {
+        width: 32px;
+        font-size: 5px;
+    }
+
+    #delete {
+        width: 30px;
+    }
+
+    #deleteButton {
+        width: 15px;
+        height: 15px;
+    }
+
+    #dialogBox {
+        font-size: 1.2em;
+        margin-top: -340px;
     }
 }
 </style>

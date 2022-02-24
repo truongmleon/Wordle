@@ -131,4 +131,27 @@ p {
         margin-top: -160px;
     }
 }
+
+@media (max-width: 315px) {
+    h1 {
+        font-size: 1.2em;
+    }
+
+    #instructions {
+        width: 220px;
+        font-size: .6em;
+        height: 130px;
+    }
+
+    #x {
+        position: absolute;
+        margin-left: 220px;
+        margin-top: -160px;
+    }
+
+    #question {
+        width: 19px;
+        height: 19px;
+    }
+}
 </style>

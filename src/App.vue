@@ -67,6 +67,7 @@ html {
     background: rgb(17, 17, 17);
     overflow-x: hidden;
     height: calc(100% + 100px);
+    touch-action: manipulation;
 }
 
 #grid {
@@ -103,7 +104,7 @@ main {
 @media (max-width: 500px) {
   #grid {
     width: 285px;
-    height: 364px;
+    height: 344px;
   }
 
   #grid div {
@@ -114,12 +115,24 @@ main {
 @media (max-width: 375px) {
   #grid {
     width: 245px;
-    height: 324px;
+    height: 294px;
     margin-top: 10px;
   }
 
   #grid div {
     font-size: 1.5em;
+  }
+}
+
+@media (max-width: 315px) {
+  #grid {
+    width: 205px;
+    height: 250px;
+    margin-top: 10px;
+  }
+
+  #grid div {
+    font-size: 1.2em;
   }
 }
 </style>
