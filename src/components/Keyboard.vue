@@ -481,7 +481,7 @@ let deleteLetter = () => {
     }
 }
 
-@media (max-width: 315px) {
+@media (max-width: 270px) {
     #keyboardContainer {
         width: 180px;
     }
