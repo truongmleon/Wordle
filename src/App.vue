@@ -112,7 +112,7 @@ main {
   }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 355px) {
   #grid {
     width: 245px;
     height: 294px;
