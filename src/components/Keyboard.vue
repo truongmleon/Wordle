@@ -403,6 +403,7 @@ let deleteLetter = () => {
 
     #enter {
         width: 50px;
+        font-size: .5em;
     }
 
     #delete {
