@@ -117,7 +117,7 @@ p {
 
 @media (max-width: 375px) {
     h1 {
-        font-size: 1.5em;
+        font-size: 2em;
     }
 
     #instructions {
@@ -130,11 +130,17 @@ p {
         margin-left: 220px;
         margin-top: -160px;
     }
+
+    #question {
+        width: 22px;
+        height: 22px;
+        margin-top: 2px;
+    }
 }
 
 @media (max-width: 315px) {
     h1 {
-        font-size: 1.2em;
+        font-size: 2em;
     }
 
     #instructions {
@@ -145,8 +151,10 @@ p {
 
     #x {
         position: absolute;
-        margin-left: 220px;
-        margin-top: -160px;
+        margin-left: 180px;
+        margin-top: -120px;
+        width: 15px;
+        height: 15px;
     }
 
     #question {
@@ -155,10 +163,29 @@ p {
     }
 }
 
-@media (max-width: 300px) {
+@media (max-width: 270px) {
+    h1 {
+        font-size: 1.6em;
+    }
+
+    #instructions {
+        width: 220px;
+        font-size: .6em;
+        height: 130px;
+    }
+
+    #x {
+        position: absolute;
+        margin-left: 190px;
+        margin-top: -120px;
+    }
+
     #question {
-        width: 1000px;
-        height: 1000px;
+        width: 16px;
+        height: 16px;
+        margin-top: 2px;
     }
 }
+    
+
 </style>

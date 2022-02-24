@@ -135,4 +135,16 @@ main {
     font-size: 1.2em;
   }
 }
+
+@media (max-width: 270px) {
+  #grid {
+    width: 165px;
+    height: 200px;
+    margin-top: 10px;
+  }
+
+  #grid div {
+    font-size: 1.2em;
+  }
+}
 </style>

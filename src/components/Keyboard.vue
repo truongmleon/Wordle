@@ -363,7 +363,7 @@ let deleteLetter = () => {
     #delete {
         position: absolute;
         margin-top: 3px;
-        width: 60px;
+        width: 65px;
     }
 
     button:focus {
@@ -390,14 +390,15 @@ let deleteLetter = () => {
 
     @media (max-width: 500px) {
     #keyboardContainer {
-        width: 330px;
+        width: 330px; 
     }
 
     button {
-        width: 26.5px;
+        width: 28.5px;
         height: 45px;
         font-size: .7em;
         user-select: none;
+        margin: 2px;
     }
 
     #enter {
@@ -405,7 +406,7 @@ let deleteLetter = () => {
     }
 
     #delete {
-        width: 40px;
+        width: 43px;
     }
 
     #deleteButton {
@@ -424,18 +425,18 @@ let deleteLetter = () => {
     }
 
     button {
-        width: 22px;
+        width: 24px;
         height: 40px;
         font-size: .7em;
     }
 
     #enter {
         width: 40px;
-        font-size: .1em;
+        font-size: 8px;
     }
 
     #delete {
-        width: 35px;
+        width: 38px;
     }
 
     #deleteButton {
@@ -455,7 +456,7 @@ let deleteLetter = () => {
     }
 
     button {
-        width: 17px;
+        width: 19px;
         height: 30px;
         font-size: 6px;
     }
@@ -466,12 +467,45 @@ let deleteLetter = () => {
     }
 
     #delete {
-        width: 30px;
+        width: 33px;
     }
 
     #deleteButton {
         width: 15px;
         height: 15px;
+    }
+
+    #dialogBox {
+        font-size: 1.2em;
+        margin-top: -340px;
+    }
+}
+
+@media (max-width: 315px) {
+    #keyboardContainer {
+        width: 180px;
+    }
+
+    button {
+        margin: 1px;
+        width: 16px;
+        height: 28px;
+        font-size: 4.5px;
+    }
+
+    #enter {
+        width: 26px;
+        font-size: 4px;
+    }
+
+    #delete {
+        width: 28px;
+        margin-top: 1.5px;
+    }
+
+    #deleteButton {
+        width: 13px;
+        height: 13px;
     }
 
     #dialogBox {
