@@ -390,7 +390,7 @@ let deleteLetter = () => {
 
     @media (max-width: 500px) {
     #keyboardContainer {
-        width: 340px; 
+        width: 330px; 
     }
 
     button {
@@ -421,7 +421,7 @@ let deleteLetter = () => {
 
 @media (max-width: 375px) {
     #keyboardContainer {
-        width: 280px;
+        width: 290px;
     }
 
     button {
