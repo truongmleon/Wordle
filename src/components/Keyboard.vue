@@ -408,6 +408,7 @@ let deleteLetter = () => {
 
     #delete {
         width: 43px;
+        margin-top: 2px;
     }
 
     #deleteButton {
