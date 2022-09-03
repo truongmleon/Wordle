@@ -2,6 +2,7 @@
   "name": "wordle",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://truongmleon.github.io/Wordle/",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
