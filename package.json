@@ -4,8 +4,8 @@
   "private": true,
   "homepage": "https://truongmleon.github.io/Wordle/",
   "scripts": {
-    "serve": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service serve",
-    "build": "NODE_OPTIONS=--openssl-legacy-provider vue-cli-service build"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "bootstrap": "^5.1.3",
