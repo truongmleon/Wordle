@@ -55,8 +55,7 @@
 const wordsList = require('./words.json'); 
 const guessingWords = wordsList['guessingWords']; //Already sorted
 const words = wordsList['words'].sort();
-//let targetRandomWord = words[parseInt(Math.random() * words.length)];
-let targetRandomWord = "shiny"
+let targetRandomWord = words[parseInt(Math.random() * words.length)];
 let rowNumber = 0; //Max row number is 5 because the board has 6 rows (6th row = 5th index)
 let keyboard = [
             [' ', ' ', ' ', ' ', ' ',],
