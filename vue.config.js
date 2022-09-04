@@ -1,3 +1,4 @@
 module.exports = {
-    publicPath: "/Wordle"
-}
+    publicPath: process.env.NODE_ENV === "production" ? "/Wordle/" : "/",
+};
+  
