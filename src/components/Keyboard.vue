@@ -55,7 +55,8 @@
 const wordsList = require('./words.json'); 
 const guessingWords = wordsList['guessingWords']; //Already sorted
 const words = wordsList['words'].sort();
-let targetRandomWord = words[parseInt(Math.random() * words.length)];
+//let targetRandomWord = words[parseInt(Math.random() * words.length)];
+let targetRandomWord = "shiny"
 let rowNumber = 0; //Max row number is 5 because the board has 6 rows (6th row = 5th index)
 let keyboard = [
             [' ', ' ', ' ', ' ', ' ',],
@@ -76,6 +77,7 @@ const resetBoard = won => {
             [' ', ' ', ' ', ' ', ' ',],
             [' ', ' ', ' ', ' ', ' ',]
     ];
+    
     rowNumber = 0;
     for (let i = 0; i < 6; i++) {
         for (let j = 0; j < 5; j++) {
@@ -97,18 +99,6 @@ const checkIfWordsMatch = word => {
     //Checks how close the word was to the actual word
     let execute = true;
     let count = 0; //If count == 5, then the player wins.
-    for (let i = 0; i < 5; i++) {
-        if (word[i] == targetRandomWord[i]) {
-            count++;
-            const boxRef = "box" + (rowNumber * 5 + i);
-            const element = document.getElementById(boxRef);
-            const letter = document.getElementById(word[i]);
-            element.style.backgroundColor = '#6aaa64'; //Change color to green if it matches exactly
-            element.style.borderColor = '#6aaa64';
-            letter.style.backgroundColor = '#6aaa64'; 
-            letter.style.borderColor = '#6aaa64'; 
-        } 
-    }
 
     //Linear search to see what's in the word but not in the correct position
     //Sets to yellow
@@ -140,6 +130,19 @@ const checkIfWordsMatch = word => {
         }
     }
 
+    for (let i = 0; i < 5; i++) {
+        if (word[i] == targetRandomWord[i]) {
+            count++;
+            const boxRef = "box" + (rowNumber * 5 + i);
+            const element = document.getElementById(boxRef);
+            const letter = document.getElementById(word[i]);
+            element.style.backgroundColor = '#6aaa64'; //Change color to green if it matches exactly
+            element.style.borderColor = '#6aaa64';
+            letter.style.backgroundColor = '#6aaa64'; 
+            letter.style.borderColor = '#6aaa64'; 
+        } 
+    }
+
     const dialogBox = document.getElementById('dialogBox');
     if (count == 5 && execute) { //Turning on the dialog box with certain text
         dialogBox.style.display = 'flex';
@@ -160,6 +163,7 @@ const checkIfWordsMatch = word => {
     } else {
         rowNumber++;
     }    
+
 }
 
 const checkWords = array => {
